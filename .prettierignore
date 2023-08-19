@@ -1,0 +1,11 @@
+/dist/*
+.local
+.output.js
+/node_modules/**
+.nuxt
+.nitro
+
+**/*.svg
+**/*.sh
+
+/public/*
