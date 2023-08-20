@@ -1,3 +1,5 @@
+@use "../public/variable" as *;
+
 @font-face {
   font-family: HarmonyOS_Sans_SC;
   src:
@@ -9,6 +11,5 @@
 
 body {
   font-family: HarmonyOS_Sans_SC, system-ui;
-  color: var(--primary-black);
-  background-color: var(--primary-grey);
+  color: $BLACK;
 }
