@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 definePageMeta({
-  title: '首页'
+  title: '登录'
 })
 </script>
 
 <template>
-  <div>Page: 首页</div>
+  <div>Page: idnex</div>
 </template>
 
 <style scoped></style>
