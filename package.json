@@ -7,18 +7,25 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "prettier": "prettier --write ."
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@nuxt/devtools": "latest",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@types/node": "^18.17.3",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-conventional-changelog-zh": "^0.0.2",
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.0",
     "nuxt": "^3.6.5",
     "prettier": "^3.0.2",
     "typescript": "^5.1.6",
@@ -27,5 +34,10 @@
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
     "pinia": "^2.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog-zh"
+    }
   }
 }
