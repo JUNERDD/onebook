@@ -39,6 +39,6 @@ export default defineNuxtConfig({
   ],
   // 实验性特征
   routeRules: {
-    '/': { redirect: '/home' }
+    // '/': { redirect: '/home' }
   }
 })

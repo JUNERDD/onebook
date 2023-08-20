@@ -2,7 +2,8 @@
 import useHomeStore from '~/stores/home'
 
 definePageMeta({
-  title: '首页'
+  title: '首页',
+  alias: '/'
 })
 
 const homeStore = useHomeStore()
