@@ -5,6 +5,35 @@ export default defineNuxtConfig({
   typescript: {
     strict: true
   },
+  css: ['@/assets/css/index.scss'],
+  vite: {
+    css: {
+      // css预处理器
+      preprocessorOptions: {
+        scss: {
+          // 自动给scss模块添加额外语句
+          additionalData: `
+           @use "@/assets/css/public/variable" as *;
+           @use "@/assets/css/public/element" as *;
+           @use "@/assets/css/public/mixin" as *;
+          `
+        }
+      }
+    }
+  },
+  // 运行时进行eslint检测
+  modules: ['@nuxtjs/eslint-module', '@unocss/nuxt', '@element-plus/nuxt', '@pinia/nuxt'],
+  elementPlus: {
+    importStyle: 'scss'
+  },
+  pinia: {
+    autoImports: [
+      // 自动引入 `defineStore()`
+      'defineStore',
+      // 自动引入 `defineStore()` 并重命名为 `definePiniaStore()`
+      ['defineStore', 'definePiniaStore']
+    ]
+  },
   // 定义app配置
   app: {
     head: {
@@ -21,24 +50,5 @@ export default defineNuxtConfig({
       // 如果浏览器不支持脚本，显示此内容
       noscript: [{ innerHTML: 'Javascript is required' }]
     }
-  },
-  // 运行时进行eslint检测
-  modules: [
-    '@nuxtjs/eslint-module',
-    [
-      '@pinia/nuxt',
-      {
-        autoImports: [
-          // 自动引入 `defineStore()`
-          'defineStore',
-          // 自动引入 `defineStore()` 并重命名为 `definePiniaStore()`
-          ['defineStore', 'definePiniaStore']
-        ]
-      }
-    ]
-  ],
-  // 实验性特征
-  routeRules: {
-    // '/': { redirect: '/home' }
   }
 })

@@ -1,0 +1,13 @@
+@mixin flex-box($isCenter: false) {
+  display: flex;
+
+  @if $isCenter {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@mixin full-box {
+  height: 100%;
+  width: 100%;
+}
