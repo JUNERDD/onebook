@@ -2,8 +2,8 @@
 
 <template>
   <div class="default">
-    <NuxtLink to="/home">home</NuxtLink>
-    <NuxtLink to="/login">login</NuxtLink>
+    <app-header />
     <slot />
+    <app-footer />
   </div>
 </template>
