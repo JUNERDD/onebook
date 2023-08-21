@@ -6,7 +6,9 @@ definePageMeta({
 </script>
 
 <template>
-  <div>home</div>
+  <div full-box-content flex-center>
+    <div font-panchang font-bold text-7xl>Wellcome.</div>
+  </div>
 </template>
 
 <style scoped></style>

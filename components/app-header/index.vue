@@ -14,7 +14,7 @@ import HeaderTab from '~/components/app-header/c-cpns/header-tab.vue'
       <div mx3 line></div>
 
       <!-- 切换主题 -->
-      <div grey-hover px4 ml4>
+      <div p4 ml4 rd-1 cursor-pointer bg-black c-white animate="spin duration-4000">
         <div i-game-barbed-sun></div>
       </div>
     </div>

@@ -25,6 +25,7 @@ export default defineConfig({
   shortcuts: [
     {
       'full-box': 'w-full h-full',
+      'full-box-content': 'h-[calc(100vh-6.25rem)]',
       'grey-hover': 'hover:bg-lgrey active:bg-lagrey py4 px3 rd-1 cursor-pointer select-none',
       line: 'bg-dgrey w1 h7 rd'
     },

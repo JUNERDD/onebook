@@ -26,3 +26,9 @@ $font-size-2: 1.25rem;
 $font-size-3: 1rem;
 $font-size-4: 0.875rem;
 $font-size-5: 0.75rem;
+
+/* 动画 */
+$transition-out-in: #{calc($ACTION / 2)};
+$transition-short: #{calc($ACTION / 3)};
+$transition-long: #{calc($ACTION * 2)};
+$transition-slow: #{calc($ACTION * 4)};
