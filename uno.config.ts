@@ -1,5 +1,6 @@
 // uno.config.ts
 import { defineConfig, presetAttributify, presetIcons, presetUno, presetWebFonts } from 'unocss'
+import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
 import theme from './assets/theme'
 
 export default defineConfig({
@@ -17,7 +18,9 @@ export default defineConfig({
     }),
     presetIcons({
       collections: {
-        game: () => import('@iconify-json/game-icons').then((i) => i.icons)
+        game: () => import('@iconify-json/game-icons').then((i) => i.icons),
+        // 从本地文件加载自己的图标
+        ob: FileSystemIconLoader('./assets/img/icons', (svg) => svg.replace('#fff', 'currentColor'))
       }
     })
   ],
@@ -26,7 +29,8 @@ export default defineConfig({
     {
       'full-box': 'w-full h-full',
       'full-box-content': 'h-[calc(100vh-6.25rem)]',
-      'grey-hover': 'hover:bg-lgrey active:bg-lagrey py4 px3 rd-1 cursor-pointer select-none',
+      'grey-hover':
+        'hover:bg-lgrey active:bg-lagrey dark:hover:bg-lagrey-6 py4 px3 rd-1 cursor-pointer select-none',
       line: 'bg-dgrey w1 h7 rd'
     },
     [

@@ -21,6 +21,8 @@
     "@nuxtjs/eslint-module": "^4.1.0",
     "@types/node": "^18.17.3",
     "@unocss/nuxt": "^0.55.2",
+    "@vueuse/core": "^10.3.0",
+    "@vueuse/nuxt": "^10.3.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "cz-conventional-changelog-zh": "^0.0.2",

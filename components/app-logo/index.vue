@@ -2,7 +2,7 @@
 
 <template>
   <NuxtLink to="/">
-    <img src="/logo/logo_black.png" alt="LOGO" class="w100%" />
+    <div i-ob-logo_white text="black dark:white-2" w100% h100%></div>
   </NuxtLink>
 </template>
 

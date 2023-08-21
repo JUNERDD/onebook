@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const tabList = [
   {
-    to: '/',
+    to: '/login',
     table: '介绍'
   },
   {
@@ -18,7 +18,7 @@ const tabList = [
 <template>
   <template v-for="{ to, table } in tabList" :key="table">
     <NuxtLink :to="to">
-      <div grey-hover>{{ table }}</div>
+      <div grey-hover text="black dark:white-2">{{ table }}</div>
     </NuxtLink>
   </template>
 </template>

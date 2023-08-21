@@ -9,7 +9,16 @@
   font-display: swap;
 }
 
+html {
+  background-color: $WHITE;
+  color: $BLACK;
+}
+
+html.dark{
+  color: $WHITE;
+  background-color: $BLACK;
+}
+
 body {
   font-family: HarmonyOS_Sans_SC, system-ui;
-  color: $BLACK;
 }
