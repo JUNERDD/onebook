@@ -4,6 +4,8 @@ const theme = {
     color: '#C81010',
     black: '#212121',
     grey: '#F9F9F9',
+    lgrey: '#F1F1F1',
+    lagrey: '#ECEAEA',
     dgrey: '#CCCCCC',
     white: '#FFFFFF',
     green: '#719847'

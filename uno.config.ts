@@ -1,5 +1,5 @@
 // uno.config.ts
-import { defineConfig, presetAttributify, presetUno, presetWebFonts } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetUno, presetWebFonts } from 'unocss'
 import theme from './assets/theme'
 
 export default defineConfig({
@@ -14,12 +14,19 @@ export default defineConfig({
       fonts: {
         panchang: 'Panchang'
       }
+    }),
+    presetIcons({
+      collections: {
+        game: () => import('@iconify-json/game-icons').then((i) => i.icons)
+      }
     })
   ],
   /* 快捷方式 */
   shortcuts: [
     {
-      'full-box': 'w-full h-full'
+      'full-box': 'w-full h-full',
+      'grey-hover': 'hover:bg-lgrey active:bg-lagrey py4 px3 rd-1 cursor-pointer select-none',
+      line: 'bg-dgrey w1 h7 rd'
     },
     [
       /^flex-center(-\w)?/,
