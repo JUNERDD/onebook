@@ -6,8 +6,8 @@ definePageMeta({
 </script>
 
 <template>
-  <div full-box-content flex-center>
-    <div animate-zoom-in-down text-7xl font-bold font-panchang>Welcome.</div>
+  <div full-page flex-center>
+    <div animate-zoom-in-down -mt20 text="lt-sm:4xl sm:7xl" font="bold panchang">Welcome.</div>
   </div>
 </template>
 

@@ -2,7 +2,8 @@
 
 <template>
   <NuxtLink to="/">
-    <div auto-color i-ob-logo_white h100% w100%></div>
+    <!-- 宽高根据父元素决定 -->
+    <div i-ob-logo_white h100% w100% auto-color></div>
   </NuxtLink>
 </template>
 
