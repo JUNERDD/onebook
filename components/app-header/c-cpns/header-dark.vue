@@ -7,10 +7,10 @@ const handleChange = () => {
 
 <template>
   <div
-    p4
     ml4
-    rd-1
     cursor-pointer
+    rd-1
+    p4
     bg="black dark:white-2"
     text="white dark:black"
     animate="spin duration-4000"

@@ -2,7 +2,7 @@
 
 <template>
   <NuxtLink to="/">
-    <div i-ob-logo_white text="black dark:white-2" w100% h100%></div>
+    <div text="black dark:white-2" i-ob-logo_white h100% w100%></div>
   </NuxtLink>
 </template>
 

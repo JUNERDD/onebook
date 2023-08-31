@@ -5,7 +5,7 @@ import HeaderDark from '~/components/app-header/c-cpns/header-dark.vue'
 
 <template>
   <div h25 flex-center-i justify-between px2>
-    <div w16 h16>
+    <div h16 w16>
       <app-logo />
     </div>
     <div flex-center-i text-1>

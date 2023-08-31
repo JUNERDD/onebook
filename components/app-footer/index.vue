@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div h30 mx2 flex-center b-t="1 dgrey solid">
+  <div mx2 h30 flex-center b-t="1 dgrey solid">
     <NuxtLink to="/">
       <div i-ob-logo_text_white text="black dark:white-2" h10 w40></div>
     </NuxtLink>

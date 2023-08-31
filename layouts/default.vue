@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div max-w-2614px mxa>
+  <div mxa max-w-2614px>
     <app-header />
     <slot />
     <app-footer />

@@ -3,7 +3,8 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-recommended',
     '@nuxtjs/eslint-config-typescript',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    '@unocss'
   ],
   parserOptions: {
     ecmaVersion: 'latest'
