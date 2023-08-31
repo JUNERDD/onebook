@@ -18,7 +18,7 @@ const tabList = [
 <template>
   <template v-for="{ to, table } in tabList" :key="table">
     <NuxtLink :to="to">
-      <div grey-hover text="black dark:white-2">{{ table }}</div>
+      <div auto-color grey-hover>{{ table }}</div>
     </NuxtLink>
   </template>
 </template>

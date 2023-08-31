@@ -31,6 +31,7 @@ export default defineConfig({
       'full-box-content': 'h-[calc(100vh-6.25rem)]',
       'grey-hover':
         'hover:bg-lgrey active:bg-lagrey dark:hover:bg-lagrey-6 py4 px3 rd-1 cursor-pointer select-none',
+      'auto-color': 'text-black dark:text-white-2',
       line: 'bg-dgrey w1 h7 rd'
     },
     [

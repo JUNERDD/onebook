@@ -3,7 +3,7 @@
 <template>
   <div mx2 h30 flex-center b-t="1 dgrey solid">
     <NuxtLink to="/">
-      <div i-ob-logo_text_white text="black dark:white-2" h10 w40></div>
+      <div auto-color i-ob-logo_text_white h10 w40></div>
     </NuxtLink>
     <!--
     <NuxtLink to="https://beian.miit.gov.cn/" target="_blank">
