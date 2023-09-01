@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div h25 flex-center-i justify-between px2>
+  <div fixed h25 w100% flex-center-i justify-between px2>
     <div h="sm:16 lt-sm:12" w="sm:16 lt-sm:12">
       <app-logo />
     </div>
@@ -12,6 +12,9 @@
     <!-- 移动端 -->
     <app-header-mb sm:hidden />
   </div>
+
+  <!-- 菜单栏 -->
+  <app-header-menu />
 </template>
 
 <style lang="scss" scoped></style>

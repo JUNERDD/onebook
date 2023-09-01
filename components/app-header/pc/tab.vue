@@ -1,24 +1,11 @@
 <script setup lang="ts">
-const tabList = [
-  {
-    to: '/login',
-    table: '介绍'
-  },
-  {
-    to: '/',
-    table: '项目'
-  },
-  {
-    to: '/',
-    table: '博客'
-  }
-]
+const tabList = useMenuList()
 </script>
 
 <template>
-  <template v-for="{ to, table } in tabList" :key="table">
+  <template v-for="{ to, label } in tabList" :key="label">
     <NuxtLink :to="to">
-      <div auto-color btn>{{ table }}</div>
+      <div auto-color btn>{{ label }}</div>
     </NuxtLink>
   </template>
 </template>
