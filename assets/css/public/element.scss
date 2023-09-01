@@ -1,13 +1,13 @@
-@use "variable" as *;
+@use 'variable' as *;
 
 //element plus样式
 @forward 'element-plus/theme-chalk/src/common/var.scss' with (
   $colors: (
     'primary': (
-      'base': $BLACK,
+      'base': $BLACK
     )
   ),
   $border-radius: (
-    'base':0.375rem
+    'base': 0.375rem
   )
 );

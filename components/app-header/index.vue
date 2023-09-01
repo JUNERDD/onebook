@@ -14,7 +14,7 @@
   </div>
 
   <!-- 菜单栏 -->
-  <app-header-menu />
+  <app-header-menu sm:hidden />
 </template>
 
 <style lang="scss" scoped></style>

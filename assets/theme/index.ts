@@ -1,3 +1,6 @@
+// 动画持续时间
+const Action = 500
+
 const theme = {
   // 颜色
   colors: {
@@ -32,6 +35,14 @@ const theme = {
     '3': '1rem', // 16px
     '4': '0.875rem', // 14px
     '5': '0.75rem' // 12px
+  },
+  // 动画时间
+  duration: {
+    action: `${Action}ms`,
+    'out-in': `${Action / 2}ms`,
+    short: `${Action / 3}ms`,
+    long: `${Action * 2}ms`,
+    slow: `${Action * 4}ms`
   }
 }
 

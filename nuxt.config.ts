@@ -27,7 +27,8 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@element-plus/nuxt',
     '@pinia/nuxt',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    '@pinia-plugin-persistedstate/nuxt'
   ],
   elementPlus: {
     importStyle: 'scss'

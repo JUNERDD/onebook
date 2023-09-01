@@ -4,13 +4,13 @@ const mainStore = useMainStore()
 
 <template>
   <div
-    bg="black dark:white-2"
-    text="white dark:black"
     animate="spin duration-4000"
     ml4
     cursor-pointer
     rd-1
     p4
+    auto-bg
+    auto-color-d
     @click="mainStore.handleMode()"
   >
     <div i-game-barbed-sun dark:hidden></div>

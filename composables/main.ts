@@ -14,7 +14,11 @@ export const useMenuList = () => [
 ]
 
 export const useMainStore = defineStore('main', () => {
+  // 切换深色、浅色模式
   const handleMode = useToggle(useDark())
 
-  return { handleMode }
+  // 切换菜单显示
+  const showMenu = ref(false)
+
+  return { handleMode, showMenu }
 })
