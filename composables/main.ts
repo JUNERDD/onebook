@@ -1,3 +1,4 @@
+/* 菜单列表 */
 export const useMenuList = () => [
   {
     to: '/login',
@@ -16,6 +17,7 @@ export const useMenuList = () => [
   }
 ]
 
+/* 菜单个人信息列表 */
 export const useMenuInfo = () => [
   {
     icon: 'i-game-icons-phone',
@@ -27,6 +29,7 @@ export const useMenuInfo = () => [
   }
 ]
 
+/* main pinia store */
 export const useMainStore = defineStore('main', () => {
   // 切换深色、浅色模式
   const handleMode = useToggle(useDark())

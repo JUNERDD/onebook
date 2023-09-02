@@ -3,6 +3,8 @@ const mainStore = useMainStore()
 const colorClass = computed(() =>
   mainStore.showMenu ? 'auto-bg-d auto-color' : 'auto-bg auto-color-d'
 )
+
+// 关闭菜单栏
 const handleDrowon = () => {
   mainStore.showMenu = !mainStore.showMenu
 }
