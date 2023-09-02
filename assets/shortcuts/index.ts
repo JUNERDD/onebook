@@ -5,8 +5,8 @@ const shortcuts: UserShortcuts = [
     'full-box': 'w-full h-full',
     // 'full-page': 'h-[calc(100vh-6.25rem)]',
     'full-page': 'h-100vh',
-    btn: 'hover:bg-lgrey active:bg-lagrey active:scale-90 dark:hover:bg-lagrey-6 py4 px3 rd-1 cursor-pointer select-none',
-    line: 'bg-dgrey w1 h7 rd'
+    'bou-line': 'bg-dgrey w1 h7 rd',
+    btn: 'hover:bg-lgrey active:bg-lagrey active:scale-90 dark:hover:bg-lagrey-6 py4 px3 rd-1 cursor-pointer select-none'
   },
   [
     // 弹性盒子居中快捷方式

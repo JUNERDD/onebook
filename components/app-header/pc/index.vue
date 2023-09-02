@@ -5,7 +5,7 @@
     <!-- tab栏 -->
     <app-header-pc-tab />
 
-    <div mx3 line></div>
+    <div bou-line mx3></div>
 
     <!-- 切换主题 -->
     <app-header-pc-dark />

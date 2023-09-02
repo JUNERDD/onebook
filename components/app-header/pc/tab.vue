@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const tabList = useMenuList()
+const menuList = useMenuList()
 </script>
 
 <template>
-  <template v-for="{ to, label } in tabList" :key="label">
+  <template v-for="{ to, label } in menuList" :key="label">
     <NuxtLink :to="to">
       <div auto-color btn>{{ label }}</div>
     </NuxtLink>
