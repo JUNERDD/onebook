@@ -8,7 +8,7 @@
     <div mx3 bou-line></div>
 
     <!-- 切换主题 -->
-    <app-header-pc-dark />
+    <app-dark />
   </div>
 </template>
 

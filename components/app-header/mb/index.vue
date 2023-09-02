@@ -9,8 +9,11 @@ const handleDrowon = () => {
 </script>
 
 <template>
-  <div ml4 rd-1 p4 transition="colors duration-action" :class="colorClass" @click="handleDrowon">
-    <div i-game-icons-hamburger-menu></div>
+  <div flex>
+    <app-dark />
+    <div ml4 rd-1 p4 transition="colors duration-action" :class="colorClass" @click="handleDrowon">
+      <div i-game-icons-hamburger-menu></div>
+    </div>
   </div>
 </template>
 
