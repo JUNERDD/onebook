@@ -4,8 +4,8 @@ import { UserShortcuts } from '@unocss/core'
 const shortcuts: UserShortcuts = [
   {
     'full-box': 'w-full h-full',
-    'full-page': 'h-100vh',
-    'full-page-p': 'h-[calc(100vh-6.25rem)]',
+    'full-page': 'h-100vh pt25',
+    'full-page-sub': 'h-[calc(100vh-6.25rem)]',
     'bou-line': 'bg-dgrey w1 h7 rd',
     btn: 'hover:bg-lgrey active:bg-lagrey active:scale-90 dark:hover:bg-lagrey-6 py4 px3 rd-1 cursor-pointer select-none'
   },

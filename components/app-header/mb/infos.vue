@@ -3,7 +3,7 @@ const menuInfo = useMenuInfo()
 </script>
 
 <template>
-  <div b="1 solid l-none b-none r-none dgrey-5" h100% p2>
+  <div b-t="1 solid" h100% b-dgrey-5 p2>
     <template v-for="{ icon, label } in menuInfo" :key="label">
       <div flex-center-i font="panchang" pb3>
         <div :class="icon"></div>
