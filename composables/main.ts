@@ -1,9 +1,9 @@
 /* 菜单列表 */
 export const useMenuList = () => [
   {
-    to: '/login',
-    label: '介绍',
-    desc: 'Introduction'
+    to: '/',
+    label: '博客',
+    desc: 'Blog'
   },
   {
     to: '/',
@@ -11,9 +11,9 @@ export const useMenuList = () => [
     desc: 'Project'
   },
   {
-    to: '/',
-    label: '博客',
-    desc: 'Blog'
+    to: '/login',
+    label: '介绍',
+    desc: 'Introduction'
   }
 ]
 

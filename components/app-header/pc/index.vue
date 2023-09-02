@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div fixed h25 w100% flex-center-i justify-between px2>
+  <div h25 w100% flex-center-i justify-between px2>
     <div h16 w16>
       <app-logo />
     </div>

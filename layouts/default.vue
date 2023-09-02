@@ -9,7 +9,7 @@ const mtClass = computed(() => (mainStore.showMenu ? 'm-t-0' : 'm-t--130'))
     <div sm:hidden>
       <app-header-mb />
       <div transition="all duration-action" relative w100% auto-bg-d :class="mtClass">
-        <div full-page class="full">
+        <div full-page pt25 class="full">
           <slot />
         </div>
         <app-footer />
@@ -19,7 +19,7 @@ const mtClass = computed(() => (mainStore.showMenu ? 'm-t-0' : 'm-t--130'))
     <!-- PC端 -->
     <div lt-sm:hidden>
       <app-header-pc />
-      <div full-page class="full">
+      <div full-page-p class="full">
         <slot />
       </div>
       <app-footer />
@@ -30,6 +30,5 @@ const mtClass = computed(() => (mainStore.showMenu ? 'm-t-0' : 'm-t--130'))
 <style lang="scss">
 .full > div {
   min-height: 100%;
-  padding-top: 6.25rem;
 }
 </style>
