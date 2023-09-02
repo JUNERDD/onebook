@@ -1,5 +1,6 @@
 import { UserShortcuts } from '@unocss/core'
 
+/* 快捷方式 */
 const shortcuts: UserShortcuts = [
   {
     'full-box': 'w-full h-full',

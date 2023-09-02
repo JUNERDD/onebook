@@ -1,14 +1,20 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div flex-center-i text-1>
-    <!-- tab栏 -->
-    <app-header-pc-tab />
+  <div fixed h25 w100% flex-center-i justify-between px2>
+    <div h16 w16>
+      <app-logo />
+    </div>
 
-    <div mx3 bou-line></div>
+    <div flex-center-i text-1>
+      <!-- tab栏 -->
+      <app-header-pc-tab />
 
-    <!-- 切换主题 -->
-    <app-dark />
+      <div mx3 bou-line></div>
+
+      <!-- 切换主题 -->
+      <app-dark />
+    </div>
   </div>
 </template>
 

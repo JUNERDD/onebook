@@ -1,6 +1,7 @@
 // 动画持续时间
 const Action = 500
 
+/* 主题 */
 const theme = {
   // 颜色
   colors: {

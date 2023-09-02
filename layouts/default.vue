@@ -1,11 +1,35 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const mainStore = useMainStore()
+const mtClass = computed(() => (mainStore.showMenu ? 'm-t-0' : 'm-t--130'))
+</script>
 
 <template>
   <div mxa max-w-2614px>
-    <app-header />
-    <slot />
-    <app-footer />
+    <!-- 移动端 -->
+    <div sm:hidden>
+      <app-header-mb />
+      <div transition="all duration-action" relative w100% auto-bg-d :class="mtClass">
+        <div full-page class="full">
+          <slot />
+        </div>
+        <app-footer />
+      </div>
+    </div>
+
+    <!-- PC端 -->
+    <div lt-sm:hidden>
+      <app-header-pc />
+      <div full-page class="full">
+        <slot />
+      </div>
+      <app-footer />
+    </div>
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+.full > div {
+  min-height: 100%;
+  padding-top: 6.25rem;
+}
+</style>

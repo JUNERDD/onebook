@@ -1,21 +1,10 @@
-<script setup lang="ts">
-const mainStore = useMainStore()
-const colorClass = computed(() =>
-  mainStore.showMenu ? 'auto-bg-d auto-color' : 'auto-bg auto-color-d'
-)
-
-// 关闭菜单栏
-const handleDrowon = () => {
-  mainStore.showMenu = !mainStore.showMenu
-}
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div flex>
-    <app-dark />
-    <div ml4 rd-1 p4 transition="colors duration-action" :class="colorClass" @click="handleDrowon">
-      <div i-game-icons-hamburger-menu></div>
-    </div>
+  <div h130 overflow-hidden auto-bg auto-color-d>
+    <app-header-mb-tab />
+    <app-header-mb-options />
+    <app-header-mb-infos />
   </div>
 </template>
 
