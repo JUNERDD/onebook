@@ -25,5 +25,20 @@ export default defineConfig({
         ob: FileSystemIconLoader('./assets/img/icons', (svg) => svg.replace('#fff', 'currentColor'))
       }
     })
-  ]
+  ],
+  /* 文件提取 */
+  content: {
+    pipeline: {
+      include: [
+        // 默认
+        /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
+
+        // 自定义 (可以编写多个)
+        // 'components/**/*.{js,ts,vue}',
+        'composables/**/*.{js,ts}'
+      ]
+      // 排除文件
+      // exclude: []
+    }
+  }
 })
