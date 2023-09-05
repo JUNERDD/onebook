@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 definePageMeta({
-  title: '首页',
-  alias: '/'
+  title: '首页'
+  // alias: '/'
 })
 </script>
 
 <template>
   <div h="100%" flex-center>
-    <div animate-zoom-in-down text="lt-sm:4xl sm:7xl" font="bold panchang">Welcome.</div>
+    <div animate-zoom-in-down text="lt-sm:4xl sm:7xl" font="bold" select-none>Welcome.</div>
   </div>
 </template>
 

@@ -1,18 +1,6 @@
 @use '../public/variable' as *;
 
-@font-face {
-  font-family: HarmonyOS_Sans_SC;
-  src:
-    url('https://cdn.jsdelivr.net/gh/irozhi/HarmonyOS-Sans/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.woff2')
-      format('woff2'),
-    url('https://cdn.jsdelivr.net/gh/irozhi/HarmonyOS-Sans/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.woff')
-      format('woff');
-  font-style: normal;
-  font-display: swap;
-}
-
 html {
-  //transition: all $transition-short !important;
   background-color: $WHITE;
   color: $BLACK;
 }
@@ -23,5 +11,5 @@ html.dark {
 }
 
 body {
-  font-family: HarmonyOS_Sans_SC, system-ui;
+  font-family: Zodiak, system-ui;
 }

@@ -15,7 +15,7 @@ const handleDrowon = () => {
       <app-logo />
     </div>
 
-    <!-- 菜单栏 -->
+    <!-- tab栏 -->
     <div flex>
       <app-dark />
       <div ml4 rd-1 p4 transition="colors duration-action" :class="colorClass" @click="handleDrowon">

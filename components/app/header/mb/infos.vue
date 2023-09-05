@@ -3,11 +3,11 @@ const menuInfo = useMenuInfo()
 </script>
 
 <template>
-  <div b-t="1 solid" h100% b-dgrey-5 p2>
+  <div b-t="1 solid" b-dgrey-5 p="x2 y3">
     <template v-for="{ icon, label } in menuInfo" :key="label">
-      <div flex-center-i font="panchang" pb3>
+      <div flex-center-i py4>
         <div :class="icon"></div>
-        <span px3>{{ label }}</span>
+        <span px4>{{ label }}</span>
       </div>
     </template>
   </div>

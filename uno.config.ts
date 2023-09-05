@@ -15,7 +15,7 @@ export default defineConfig({
     presetWebFonts({
       provider: 'fontshare',
       fonts: {
-        panchang: 'Panchang'
+        zodiak: 'Zodiak'
       }
     }),
     presetIcons({

@@ -1,18 +1,18 @@
 /* 菜单列表 */
 export const useMenuList = () => [
   {
-    to: '/',
-    label: '博客',
+    to: '/blog',
+    label: 'Blog',
     desc: 'Blog'
   },
   {
-    to: '/',
-    label: '项目',
-    desc: 'Project'
+    to: '/projects',
+    label: 'Projects',
+    desc: 'Projects'
   },
   {
-    to: '/login',
-    label: '介绍',
+    to: '/introduction',
+    label: 'Introduction',
     desc: 'Introduction'
   }
 ]
@@ -37,5 +37,8 @@ export const useMainStore = defineStore('main', () => {
   // 切换菜单显示
   const showMenu = ref(false)
 
-  return { handleMode, showMenu }
+  // 记录菜单高度
+  const menuHeight = ref(0)
+
+  return { handleMode, showMenu, menuHeight }
 })
