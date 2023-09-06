@@ -37,8 +37,5 @@ export const useMainStore = defineStore('main', () => {
   // 切换菜单显示
   const showMenu = ref(false)
 
-  // 记录菜单高度
-  const menuHeight = ref(0)
-
-  return { handleMode, showMenu, menuHeight }
+  return { handleMode, showMenu }
 })

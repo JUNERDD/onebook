@@ -14,7 +14,6 @@ export default defineNuxtConfig({
           // 自动给scss模块添加额外语句
           additionalData: `
            @use "@/assets/css/public/variable" as *;
-           @use "@/assets/css/public/element" as *;
            @use "@/assets/css/public/mixin" as *;
           `
         }
@@ -25,7 +24,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/eslint-module',
     '@unocss/nuxt',
-    '@element-plus/nuxt',
     '@pinia/nuxt',
     '@vueuse/nuxt',
     '@pinia-plugin-persistedstate/nuxt'
