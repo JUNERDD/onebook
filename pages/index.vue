@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 definePageMeta({
-  title: '首页'
+  title: '主页'
   // alias: '/'
 })
 </script>
