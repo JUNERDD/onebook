@@ -28,9 +28,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@pinia-plugin-persistedstate/nuxt'
   ],
-  elementPlus: {
-    importStyle: 'scss'
-  },
   pinia: {
     autoImports: [
       // 自动引入 `defineStore()`
