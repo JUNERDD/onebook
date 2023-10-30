@@ -2,17 +2,17 @@
 export const useMenuList = () => [
   {
     to: '/blog',
-    label: 'Blog',
+    label: '博客',
     desc: 'Blog'
   },
   {
     to: '/projects',
-    label: 'Projects',
+    label: '项目',
     desc: 'Projects'
   },
   {
     to: '/introduction',
-    label: 'Introduction',
+    label: '介绍',
     desc: 'Introduction'
   }
 ]
