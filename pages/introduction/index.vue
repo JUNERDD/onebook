@@ -5,7 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="">
+  <div h-full flex-center>
     <h2>introduction</h2>
   </div>
 </template>

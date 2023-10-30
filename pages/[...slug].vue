@@ -5,7 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div h="100%" flex-center flex-col>
+  <div h-full flex-center flex-col>
     <div flex-center-i>
       <div i-game-icons-linked-rings text="lt-sm:4xl sm:6xl"></div>
       <div font="bold" text="lt-sm:4xl sm:5xl" ml2>404</div>
