@@ -28,14 +28,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@pinia-plugin-persistedstate/nuxt'
   ],
-  pinia: {
-    autoImports: [
-      // 自动引入 `defineStore()`
-      'defineStore',
-      // 自动引入 `defineStore()` 并重命名为 `definePiniaStore()`
-      ['defineStore', 'definePiniaStore']
-    ]
-  },
   // 定义app配置
   app: {
     head: {

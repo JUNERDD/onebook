@@ -1,4 +1,4 @@
-import { UserShortcuts } from '@unocss/core'
+import type { UserShortcuts } from '@unocss/core'
 
 /* 快捷方式 */
 const shortcuts: UserShortcuts = [
