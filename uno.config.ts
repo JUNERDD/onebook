@@ -21,6 +21,7 @@ export default defineConfig({
     presetIcons({
       collections: {
         game: () => import('@iconify-json/game-icons/icons.json').then((i) => i.default),
+        simple: () => import('@iconify-json/simple-icons/icons.json').then((i) => i.default),
         // 从本地文件加载自己的图标
         ob: FileSystemIconLoader('./assets/img/icons', (svg) => svg.replace('#fff', 'currentColor'))
       }
