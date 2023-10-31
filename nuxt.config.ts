@@ -41,7 +41,7 @@ export default defineNuxtConfig({
     head: {
       link: [{ rel: 'icon', type: 'img/x-icon', href: '/logo_white.ico' }],
       // 在加载nuxt.js前就执行的js代码
-      script: ['/head_script.ts'],
+      script: [{ src: '/head_script.ts' }],
       meta: [
         {
           name: 'description',
