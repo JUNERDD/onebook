@@ -26,8 +26,15 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@vueuse/nuxt',
-    '@pinia-plugin-persistedstate/nuxt'
+    '@pinia-plugin-persistedstate/nuxt',
+    '@nuxtjs/google-fonts'
   ],
+  // 谷歌字体
+  googleFonts: {
+    families: {
+      'Noto Serif SC': true
+    }
+  },
   // 定义app配置
   app: {
     head: {

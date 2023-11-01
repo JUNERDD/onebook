@@ -12,12 +12,6 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetWebFonts({
-      provider: 'fontshare',
-      fonts: {
-        zodiak: 'Zodiak'
-      }
-    }),
     presetIcons({
       collections: {
         game: () => import('@iconify-json/game-icons/icons.json').then((i) => i.default),
