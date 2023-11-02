@@ -9,8 +9,8 @@ const findList = useFineMe()
 </script>
 
 <template>
-  <div flex flex-col gap-1 py-20>
-    <div lt-sm="flex-col px-1" sm="w-5/7" mx-a flex gap-1>
+  <div flex flex-col gap-1 py-20 lt-sm="py-2">
+    <div lt-sm="px-1" sm="w-5/7" lt-xl="flex-col" mx-a flex gap-1>
       <!-- 照片 -->
       <div>
         <img :src="MeImg" alt="我的照片" w="lt-sm:full sm:md" rd-2 />
