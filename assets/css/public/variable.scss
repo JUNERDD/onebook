@@ -6,7 +6,7 @@ $LGREY: #f1f1f1;
 $DGREY: #cccccc;
 $WHITE: #ffffff;
 $GREEN: #719847;
-$ACTION: 500ms;
+$BLUE: #74899D;
 
 /* 间距 */
 $spacing-1: 3.125rem; // 50px
@@ -28,6 +28,7 @@ $font-size-4: 0.875rem;
 $font-size-5: 0.75rem;
 
 /* 动画 */
+$ACTION: 500ms;
 $transition-out-in: #{calc($ACTION / 2)};
 $transition-short: #{calc($ACTION / 3)};
 $transition-long: #{calc($ACTION * 2)};

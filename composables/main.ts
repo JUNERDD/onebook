@@ -31,11 +31,14 @@ export const useMenuInfo = () => [
 
 /* main pinia store */
 export const useMainStore = defineStore('main', () => {
+  // 深色模式
+  const isDark = useDark()
+
   // 切换深色、浅色模式
-  const handleMode = useToggle(useDark())
+  const handleMode = useToggle(isDark)
 
   // 切换菜单显示
   const showMenu = ref(false)
 
-  return { handleMode, showMenu }
+  return { handleMode, showMenu, isDark }
 })
