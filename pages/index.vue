@@ -3,11 +3,15 @@ definePageMeta({
   title: '主页'
   // alias: '/'
 })
+
+const stackList = useHomeStack()
 </script>
 
 <template>
   <div full-page-sub flex flex-col gap-9xl px-2>
     <!--    <div animate-zoom-in-down text="lt-sm:4xl sm:7xl" font="bold" select-none>Welcome.</div>-->
+
+    <!-- 标题 -->
     <div mt-9xl flex flex-col gap-2 lt-sm="mt1">
       <h1 text="lt-sm:5xl sm:7xl" leading="tight!">欢迎光临我的博客</h1>
       <p>
@@ -19,16 +23,13 @@ definePageMeta({
       </p>
     </div>
 
+    <!-- 技术栈 -->
     <div flex flex-col gap-2>
       <h1 text="lt-sm:2xl sm:4xl">博客技术栈</h1>
       <div flex flex-wrap gap-2>
-        <custom-card />
-        <custom-card />
-        <custom-card />
-        <custom-card />
-        <custom-card />
-        <custom-card />
-        <custom-card />
+        <template v-for="stack in stackList" :key="stack.label">
+          <custom-card v-bind="stack" />
+        </template>
       </div>
     </div>
   </div>
