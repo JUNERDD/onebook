@@ -29,9 +29,10 @@ const findList = useFineMe()
           <div p-text>
             <p>哈喽呀！我是邱君儿，一名热爱摄影和前端的大学生。</p>
             <p>
-              目前就读于
-              <custom-link link="https://www.gcc.edu.cn/" text="Guangzhou College of Commerce" />
-              ，正在找实习（然而找不到） 。
+              目前就读于<custom-link
+                link="https://www.gcc.edu.cn/"
+                text="Guangzhou College of Commerce"
+              />，正在找实习（然而找不到） 。
             </p>
           </div>
 
