@@ -26,7 +26,7 @@ const stackList = useHomeStack()
     <!-- 技术栈 -->
     <div flex flex-col gap-2>
       <h1 text="lt-sm:2xl sm:4xl">博客技术栈</h1>
-      <div flex flex-wrap gap-2>
+      <div flex flex-wrap gap-3>
         <template v-for="stack in stackList" :key="stack.label">
           <custom-card v-bind="stack" />
         </template>

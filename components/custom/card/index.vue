@@ -7,7 +7,7 @@ defineProps<ICustomCardProps>()
 <template>
   <div
     border="1 solid"
-    w="[calc(33.33333%-1.875rem*2/3)] lt-xl:[calc(50%-1.875rem*1/2)] lt-sm:full"
+    w="[calc(33.33333%-1.25rem*2/3)] lt-xl:[calc(50%-1.25rem*1/2)] lt-sm:full"
     h-45
     flex
     flex-col
@@ -19,7 +19,7 @@ defineProps<ICustomCardProps>()
   >
     <span text-1 :class="icon" />
     <h3>{{ label }}</h3>
-    <p text="xs" auto-color>{{ text }}</p>
+    <div auto-color>{{ text }}</div>
   </div>
 </template>
 
