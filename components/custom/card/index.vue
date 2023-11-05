@@ -15,6 +15,7 @@ defineProps<ICustomCardProps>()
     b-dgrey-5
     dark:b-white-6
     rounded-2
+    bg-dgrey-6
     p2
   >
     <span text-1 :class="icon" />

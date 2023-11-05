@@ -8,7 +8,7 @@ const stackList = useHomeStack()
 </script>
 
 <template>
-  <div full-page-sub flex flex-col gap-9xl px-2>
+  <div full-page-sub flex flex-col gap-9xl px-2 pb-1>
     <!--    <div animate-zoom-in-down text="lt-sm:4xl sm:7xl" font="bold" select-none>Welcome.</div>-->
 
     <!-- 标题 -->

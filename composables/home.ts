@@ -35,5 +35,11 @@ export const useHomeStack = () => [
     label: 'PlanetScale Database',
     text: 'Gitee',
     icon: 'i-simple-icons-planetscale'
+  },
+  {
+    link: 'https://gitee.com/junerdd',
+    label: 'Vercel Deploy',
+    text: 'Gitee',
+    icon: 'i-simple-icons-vercel'
   }
 ]
