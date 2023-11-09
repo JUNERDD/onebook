@@ -7,7 +7,7 @@ const shortcuts: UserShortcuts = [
     'full-page': 'min-h-100vh pt25',
     'full-page-sub': 'min-h-[calc(100vh-6.25rem)]',
     'bou-line': 'bg-dgrey-3 w1 h7 rd',
-    btn: 'hover:bg-lgrey active:bg-lagrey active:scale-90 dark:hover:bg-lagrey-6 dark:active:bg-lagrey-6 py4 px3 rd-1 cursor-pointer select-none',
+    btn: 'hover:bg-dgrey-5 dark:hover:bg-lagrey-6 py4 px3 rd-1 cursor-pointer select-none',
     'btn-p': 'btn bg-lgrey dark:bg-lagrey-6 dark:text-white',
     'p-box': 'flex flex-col gap-1',
     'p-text': 'flex flex-col gap-4 items-start'
