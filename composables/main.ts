@@ -21,11 +21,11 @@ export const useMenuList = () => [
 export const useMenuInfo = () => [
   {
     icon: 'i-game-icons-phone',
-    label: '13553984605'
+    label: '不必了，你可以通过邮箱联系我'
   },
   {
     icon: 'i-game-icons-envelope',
-    label: '53842108@qq.com'
+    label: 'juneruse@foxmail.com'
   }
 ]
 
