@@ -44,7 +44,7 @@
     "@pinia/nuxt": "^0.5.1",
     "@vercel/analytics": "^1.1.1",
     "normalize.css": "^8.0.1",
-    "pinia": "^2.1.6"
+    "pinia": "^2.1.7"
   },
   "config": {
     "commitizen": {
