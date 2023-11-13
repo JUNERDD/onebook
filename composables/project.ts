@@ -19,42 +19,49 @@ export const useProjectList = (): ICustomCardV2Props[] => [
     id: '1',
     title: 'ApiBear',
     desc: '企业级接口测试工具',
-    tag: 'Next.js'
+    tag: 'Next.js',
+    img: 'https://images.pexels.com/photos/18601910/pexels-photo-18601910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   },
   {
     id: '1',
     title: 'ApiBear',
     desc: '企业级接口测试工具',
-    tag: 'Next.js'
+    tag: 'Next.js',
+    img: 'https://images.pexels.com/photos/18601910/pexels-photo-18601910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   },
   {
     id: '1',
     title: 'ApiBear',
     desc: '企业级接口测试工具',
-    tag: 'Next.js'
+    tag: 'Next.js',
+    img: 'https://images.pexels.com/photos/18601910/pexels-photo-18601910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   },
   {
     id: '1',
     title: 'ApiBear',
     desc: '企业级接口测试工具',
-    tag: 'Next.js'
+    tag: 'Next.js',
+    img: 'https://images.pexels.com/photos/18601910/pexels-photo-18601910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   },
   {
     id: '1',
     title: 'ApiBear',
     desc: '企业级接口测试工具',
-    tag: 'Next.js'
+    tag: 'Next.js',
+    img: 'https://images.pexels.com/photos/18601910/pexels-photo-18601910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   },
   {
     id: '1',
     title: 'ApiBear',
     desc: '企业级接口测试工具',
-    tag: 'Next.js'
+    tag: 'Next.js',
+    img: 'https://images.pexels.com/photos/18601910/pexels-photo-18601910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   },
   {
     id: '1',
     title: 'ApiBear',
     desc: '企业级接口测试工具',
-    tag: 'Next.js'
+    tag: 'Next.js',
+    img: 'https://images.pexels.com/photos/18601910/pexels-photo-18601910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
   }
 ]

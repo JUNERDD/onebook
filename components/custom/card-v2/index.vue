@@ -5,23 +5,23 @@ defineProps<ICustomCardV2Props>()
 </script>
 
 <template>
-  <div
-    border="1 solid"
-    aspect="4/3"
-    flex
-    flex-col
-    cursor-pointer
-    overflow-hidden
-    b-dgrey-5
-    dark:b-white-6
-    rounded-2
-    respon-card
-  >
-    <div flex-1 shrink-0 bg-amber-4 lt-sm="min-h-1/2"></div>
-    <div h-25 flex flex-col justify-between p3>
+  <div aspect="4/3" flex="~ col" cursor-pointer overflow-hidden rounded-2 respon-card>
+    <div flex-1 shrink-0 lt-sm="min-h-1/2" overflow-hidden>
+      <img w-full :src="img" :alt="title" />
+    </div>
+    <div
+      border="1 solid dgrey-5 dark:white-6"
+      h-25
+      flex="~ col"
+      justify-between
+      rounded="2 t-none"
+      b-t-none
+      bg-dgrey-6
+      p3
+    >
       <h4>{{ title }}</h4>
       <div flex items-end justify-between>
-        <span text-xs>{{ desc }}</span>
+        <span text-sm>{{ desc }}</span>
         <custom-tip :text="tag" circular small />
       </div>
     </div>
