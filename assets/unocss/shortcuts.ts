@@ -10,7 +10,9 @@ const shortcuts: UserShortcuts = [
     btn: 'hover:bg-dgrey-5 dark:hover:bg-lagrey-6 py4 px3 rd-1 cursor-pointer select-none',
     'btn-p': 'btn bg-lgrey dark:bg-lagrey-6 dark:text-white',
     'p-box': 'flex flex-col gap-1',
-    'p-text': 'flex flex-col gap-4 items-start'
+    'p-text': 'flex flex-col gap-4 items-start',
+    'respon-card':
+      'w-[calc(25%-1.25rem*3/4)] lt-2xl:w-[calc(33.33333%-1.25rem*2/3)] lt-xl:w-[calc(50%-1.25rem*1/2)] lt-sm:w-full'
   },
   [
     // 弹性盒子居中快捷方式

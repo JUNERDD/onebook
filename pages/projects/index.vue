@@ -4,6 +4,7 @@ definePageMeta({
 })
 
 const stack = useProjectStack()
+const projectList = useProjectList()
 </script>
 
 <template>
@@ -20,29 +21,10 @@ const stack = useProjectStack()
     </div>
 
     <!-- 内容 -->
-    <div w-full flex-center-i flex-wrap>
-      <div
-        border="1 solid"
-        aspect="4/3"
-        flex
-        flex-col
-        cursor-pointer
-        overflow-hidden
-        b-dgrey-5
-        dark:b-white-6
-        rounded-2
-        lt-sm:w-full
-        sm:h-60
-      >
-        <div flex-1 shrink-0 bg-amber-4 lt-sm="min-h-1/2"></div>
-        <div h-25 flex flex-col justify-between p3>
-          <h4>ApiBear</h4>
-          <div flex items-end justify-between>
-            <span text-xs>企业级接口测试工具</span>
-            <custom-tip text="Next.js" circular small />
-          </div>
-        </div>
-      </div>
+    <div flex flex-wrap gap-3>
+      <template v-for="item in projectList" :key="item.id">
+        <custom-card-v2 v-bind="item" />
+      </template>
     </div>
   </div>
 </template>

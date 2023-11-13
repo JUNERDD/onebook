@@ -1,5 +1,7 @@
+import type { ICustomCardProps } from '~/components/custom/card/_type'
+
 /* 首页技术栈列表 */
-export const useHomeStack = () => [
+export const useHomeStack = (): ICustomCardProps[] => [
   {
     link: 'https://gitee.com/junerdd',
     label: 'Nuxt Architecture',

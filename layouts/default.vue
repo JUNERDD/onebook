@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const mainStore = useMainStore()
-const mtClass = computed(() => (mainStore.showMenu ? 'm-t-0' : `m-t--131`))
+const mtClass = computed(() => (mainStore.showMenu ? 'mt-0' : `m-t--131`))
 </script>
 
 <template>
