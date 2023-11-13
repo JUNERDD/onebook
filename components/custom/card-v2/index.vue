@@ -5,7 +5,17 @@ defineProps<ICustomCardV2Props>()
 </script>
 
 <template>
-  <div aspect="4/3" flex="~ col" cursor-pointer overflow-hidden rounded-2 respon-card class="card-v2">
+  <NuxtLink
+    aspect="4/3"
+    flex="~ col"
+    cursor-pointer
+    overflow-hidden
+    rounded-2
+    respon-card
+    class="card-v2"
+    auto-color
+    :to="`projects/detail/${id}`"
+  >
     <div flex-1 shrink-0 lt-sm="min-h-1/2" overflow-hidden>
       <img w-full :src="img" :alt="title" class="img" transition="transform duration-out-in" />
     </div>
@@ -25,7 +35,7 @@ defineProps<ICustomCardV2Props>()
         <custom-tip :text="tag" circular small />
       </div>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <style lang="scss" scoped>
