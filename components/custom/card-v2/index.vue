@@ -15,8 +15,9 @@ defineProps<ICustomCardV2Props>()
     class="card-v2"
     auto-color
     :to="`projects/detail/${id}`"
+    target="_blank"
   >
-    <div flex-1 shrink-0 lt-sm="min-h-1/2" overflow-hidden>
+    <div flex-1 shrink-0 lt-sm="min-h-2/3" overflow-hidden>
       <img w-full :src="img" :alt="title" class="img" transition="transform duration-out-in" />
     </div>
     <div
