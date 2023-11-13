@@ -5,9 +5,9 @@ defineProps<ICustomCardV2Props>()
 </script>
 
 <template>
-  <div aspect="4/3" flex="~ col" cursor-pointer overflow-hidden rounded-2 respon-card>
+  <div aspect="4/3" flex="~ col" cursor-pointer overflow-hidden rounded-2 respon-card class="card-v2">
     <div flex-1 shrink-0 lt-sm="min-h-1/2" overflow-hidden>
-      <img w-full :src="img" :alt="title" />
+      <img w-full :src="img" :alt="title" class="img" transition="transform duration-out-in" />
     </div>
     <div
       border="1 solid dgrey-5 dark:white-6"
@@ -28,4 +28,10 @@ defineProps<ICustomCardV2Props>()
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.card-v2:hover {
+  .img {
+    transform: scale(1.05);
+  }
+}
+</style>
