@@ -38,7 +38,9 @@ export default defineNuxtConfig({
   },
   // 数据库
   supabase: {
-    redirect: false
+    redirect: false,
+    url: process.env.NEXT_PUBLIC_SUPABASE_URL,
+    key: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
   },
   // 定义app配置
   app: {
