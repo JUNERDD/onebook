@@ -9,7 +9,7 @@ const mtClass = computed(() => (mainStore.showMenu ? 'mt-0' : `m-t--131`))
       <!-- 移动端 -->
       <div sm:hidden>
         <app-header-mb />
-        <div transition="all duration-action" relative w100% auto-bg-d :class="mtClass">
+        <div transition="all duration-action" relative w-full auto-bg-d :class="mtClass">
           <div full-page>
             <slot />
           </div>

@@ -27,13 +27,18 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/supabase'
   ],
   // 谷歌字体
   googleFonts: {
     families: {
       'Noto Serif SC': true
     }
+  },
+  // 数据库
+  supabase: {
+    redirect: false
   },
   // 定义app配置
   app: {

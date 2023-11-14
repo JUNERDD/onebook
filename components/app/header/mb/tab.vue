@@ -9,7 +9,7 @@ const handleDrowon = () => {
 </script>
 
 <template>
-  <div relative z-8 h25 w100% flex-center-i justify-between px2>
+  <div relative z-8 h25 w-full flex-center-i justify-between px2>
     <!-- logo -->
     <div h12 w12>
       <app-logo />
