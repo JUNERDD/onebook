@@ -11,6 +11,7 @@ const theme = {
     lgrey: '#F1F1F1',
     lagrey: '#ECEAEA',
     dgrey: '#CCCCCC',
+    bgrey: '#646464',
     white: '#FFFFFF',
     green: '#719847'
   },
