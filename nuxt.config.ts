@@ -14,6 +14,7 @@ export default defineNuxtConfig({
           // 自动给scss模块添加额外语句
           additionalData: `
            @use "@/assets/css/public/variable" as *;
+           @use "@/assets/css/public/elui" as *;
            @use "@/assets/css/public/mixin" as *;
           `
         }
@@ -28,8 +29,13 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/supabase'
+    '@nuxtjs/supabase',
+    '@element-plus/nuxt'
   ],
+  // element plus
+  elementPlus: {
+    importStyle: 'scss'
+  },
   // 谷歌字体
   googleFonts: {
     families: {
