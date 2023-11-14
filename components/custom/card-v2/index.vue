@@ -18,7 +18,7 @@ defineProps<ICustomCardV2Props>()
     target="_blank"
   >
     <div flex-1 shrink-0 lt-sm="min-h-2/3" overflow-hidden>
-      <img w-full :src="img" :alt="title" class="img" transition="transform duration-out-in" />
+      <img h-full w-full object-cover :src="img" :alt="title" class="img" transition="transform duration-out-in" />
     </div>
     <div
       border="1 solid dgrey-5 dark:white-6"
