@@ -5,5 +5,5 @@ export default defineEventHandler(async (event) => {
 
   const { data } = await client.from('project').select('*')
 
-  return { libraries: data }
+  return data
 })
