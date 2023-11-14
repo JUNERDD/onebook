@@ -22,10 +22,11 @@ defineProps<ICustomCardV2Props>()
     </div>
     <div
       border="1 solid dgrey-5 dark:white-6"
-      h-25
       flex="~ col"
-      justify-between
       rounded="2 t-none"
+      h="25 lt-sm:20"
+      lt-sm="max-h-1/3"
+      justify-between
       b-t-none
       bg-dgrey-6
       p3
