@@ -23,12 +23,14 @@ projectStore.fetchProjectListAction()
       </div>
     </div>
 
-    <!-- 内容 -->
-    <div flex flex-wrap gap-3>
-      <template v-for="item in projectStore.projectList" :key="item.id">
-        <custom-card-v2 v-bind="item" />
-      </template>
-    </div>
+    <!-- 加载盒子 -->
+    <custom-loading :show="projectStore.projectList.length < 1">
+      <div flex flex-wrap gap-3>
+        <template v-for="item in projectStore.projectList" :key="item.id">
+          <custom-card-v2 v-bind="item" />
+        </template>
+      </div>
+    </custom-loading>
   </div>
 </template>
 
