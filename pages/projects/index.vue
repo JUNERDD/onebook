@@ -4,7 +4,10 @@ definePageMeta({
 })
 
 const stack = useProjectStack()
-const projectList = useProjectList()
+const projectStore = useProjectStore()
+
+// 发送列表请求
+projectStore.fetchProjectListAction()
 </script>
 
 <template>
@@ -22,7 +25,7 @@ const projectList = useProjectList()
 
     <!-- 内容 -->
     <div flex flex-wrap gap-3>
-      <template v-for="item in projectList" :key="item.id">
+      <template v-for="item in projectStore.projectList" :key="item.id">
         <custom-card-v2 v-bind="item" />
       </template>
     </div>
