@@ -16,7 +16,7 @@ export const useProjectStack = () => [
 ]
 
 /* project pinia store */
-const defaultDetail: IDetail = {
+export const defaultDetail: IDetail = {
   id: 'string',
   project_id: 'string',
   title: 'string',
