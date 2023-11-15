@@ -21,7 +21,7 @@ projectStore.fetchProjectDetailAction(id as string)
         <!-- 中部 -->
         <div flex gap-1 lt-xl:flex-col>
           <!-- 轮播图 -->
-          <project-carousel :imgs="projectDetail.imgs" w="2/3 lt-sm:full" />
+          <project-carousel :imgs="projectDetail.imgs" w="1/2 lt-sm:full" />
 
           <!-- 描述 -->
           <div flex="~ col" flex-1 gap-2>
