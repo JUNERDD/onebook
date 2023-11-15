@@ -1,5 +1,6 @@
 import type { ICustomCardV2Props } from '~/components/custom/card-v2/_type'
-import { getProjectList } from '~/services/project'
+import { getProjectDetail, getProjectList } from '~/services/project'
+import type { IDetail } from '~/types/project/detail'
 
 /* 项目技术栈标签列表 */
 export const useProjectStack = () => [
@@ -18,18 +19,32 @@ export const useProjectStack = () => [
 export const useProjectStore = defineStore('project', () => {
   // 项目列表
   const projectList = ref<ICustomCardV2Props[]>([])
-
+  // 项目详情
+  const projectDetail = ref<IDetail>()
   // 加载状态
   const isLoading = ref(true)
 
-  // 请求项目列表
-  const fetchProjectListAction = async () => {
-    isLoading.value = true
-    const res = await getProjectList()
-    if (!res) return
-    projectList.value = res.data.value
-    isLoading.value = false
+  // 包装action组合函数
+  function composeAction<T extends (...args: any[]) => Promise<any>>(action: T) {
+    // 返回一个新函数，接受action的参数
+    return async (...args: Parameters<T>) => {
+      isLoading.value = true
+      await action(...args)
+      isLoading.value = false
+    }
   }
 
-  return { projectList, fetchProjectListAction, isLoading }
+  // 请求项目列表
+  const fetchProjectListAction = composeAction(async () => {
+    const res = await getProjectList()
+    if (res) projectList.value = res
+  })
+
+  // 请求项目详情
+  const fetchProjectDetailAction = composeAction(async (id: string) => {
+    const res = await getProjectDetail(id)
+    if (res && res.length > 0) projectDetail.value = res[0]
+  })
+
+  return { projectList, fetchProjectListAction, isLoading, fetchProjectDetailAction, projectDetail }
 })
