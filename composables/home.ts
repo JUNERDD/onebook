@@ -1,6 +1,6 @@
-import type { ICustomCardProps } from '~/components/custom/card/_type'
-
 /* 首页技术栈列表 */
+import type { ICustomCardProps } from '~/types/custom'
+
 export const useHomeStack = (): ICustomCardProps[] => [
   {
     link: 'https://nuxt.com.cn/',

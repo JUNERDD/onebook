@@ -1,6 +1,6 @@
-import type { ICustomCardV2Props } from '~/components/custom/card-v2/_type'
 import { getProjectDetail, getProjectList } from '~/services/project'
 import type { IDetail } from '~/types/project/detail'
+import type { ICustomCardV2Props } from '~/types/custom'
 
 /* 项目技术栈标签列表 */
 export const useProjectStack = () => [
@@ -21,12 +21,12 @@ const defaultDetail: IDetail = {
   project_id: 'string',
   title: 'string',
   desc: 'string',
-  technology_stack: ['string'],
-  imgs: ['string'],
-  project_link: {
-    type: '0',
-    link: ''
-  }
+  technology_stack: [],
+  imgs: [],
+  project_link: [],
+  role: 'string',
+  time: 'string',
+  bottom_info: { label: 'string', text: [] }
 }
 export const useProjectStore = defineStore('project', () => {
   // 项目列表

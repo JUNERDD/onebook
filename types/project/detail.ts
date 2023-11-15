@@ -1,3 +1,11 @@
+import type { ICustomLink } from '~/types/custom'
+
+// 底部信息类型
+export interface IBottomInfo {
+  label: string
+  text: string[]
+}
+
 // 详情页类型
 export interface IDetail {
   id: string
@@ -6,8 +14,8 @@ export interface IDetail {
   desc: string
   technology_stack: string[]
   imgs: string[]
-  project_link: {
-    type: '0' | '1' | '2'
-    link: string
-  }
+  project_link: ICustomLink[]
+  role: string
+  time: string
+  bottom_info: IBottomInfo
 }

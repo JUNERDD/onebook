@@ -1,18 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import type { IBottomInfo } from '~/types/project/detail'
+
+defineProps<IBottomInfo>()
+</script>
 
 <template>
   <div flex="~ col" gap-3>
     <p font-bold>
-      The best place to start your documentation Write pages in Markdown, use Vue components and enjoy the power of
-      Nuxt.
+      {{ label }}
     </p>
 
     <ul flex="~ col" gap-3>
-      <li class="ul-li" flex items-center gap-4>+50 Components ready to build rich pages</li>
-      <li class="ul-li" flex items-center gap-4>Article, Docs and Page layouts</li>
-      <li class="ul-li" flex items-center gap-4>Start from a README, scale to a framework documentation</li>
-      <li class="ul-li" flex items-center gap-4>Leverages Typography and Elements</li>
-      <li class="ul-li" flex items-center gap-4>Used on Content Documentation</li>
+      <template v-for="item in text" :key="item">
+        <li class="ul-li" flex gap-4 text="black-2 dark:white-2 lt-sm:sm">{{ item }}</li>
+      </template>
     </ul>
   </div>
 </template>
@@ -26,6 +27,8 @@
     height: 0.25rem;
     border-radius: 50%;
     background: $BGREY;
+    flex-shrink: 0;
+    margin-top: 0.5rem;
   }
 }
 </style>

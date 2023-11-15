@@ -1,9 +1,7 @@
 <script setup lang="ts">
-defineProps<{
-  text: string
-  link?: string
-  icon?: string
-}>()
+import type { ICustomLink } from '~/types/custom'
+
+defineProps<ICustomLink>()
 </script>
 
 <template>

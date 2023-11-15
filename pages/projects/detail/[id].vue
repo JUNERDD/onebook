@@ -8,19 +8,6 @@ const { id } = route.params
 const projectStore = useProjectStore()
 const { isLoading, projectDetail } = storeToRefs(projectStore)
 projectStore.fetchProjectDetailAction(id as string)
-
-const useFineMe = [
-  {
-    link: 'https://gitee.com/junerdd',
-    text: 'Gitee',
-    icon: 'i-simple-icons-gitee'
-  },
-  {
-    link: 'https://github.com/JUNERDD',
-    text: 'Gitub',
-    icon: 'i-simple-icons-github'
-  }
-]
 </script>
 
 <template>
@@ -39,11 +26,11 @@ const useFineMe = [
           <!-- 描述 -->
           <div flex="~ col" flex-1 gap-2>
             <!-- 名称 -->
-            <project-section title="角色" text="全栈开发" />
+            <project-section title="角色" :text="projectDetail.role" />
 
             <!-- 项目地址 -->
             <project-section title="地址">
-              <template v-for="{ link, text, icon } in useFineMe" :key="link">
+              <template v-for="{ link, text, icon } in projectDetail.project_link" :key="link">
                 <custom-link :link="link" :text="text" :icon="icon" />
               </template>
             </project-section>
@@ -56,7 +43,7 @@ const useFineMe = [
             </project-section>
 
             <!-- 项目周期 -->
-            <project-section title="开发周期" text="2023.02.10 ~ 至今" />
+            <project-section title="开发周期" :text="projectDetail.time" />
 
             <!-- 立即体验 -->
             <div flex flex-1 items-end pb-4>
@@ -66,7 +53,7 @@ const useFineMe = [
         </div>
 
         <!-- 底部 -->
-        <project-bottom />
+        <project-bottom v-bind="projectDetail.bottom_info" />
       </div>
     </custom-loading>
   </div>

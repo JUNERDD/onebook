@@ -1,10 +1,7 @@
 <script setup lang="ts">
-defineProps<{
-  link: string
-  label: string
-  text: string
-  icon: string
-}>()
+import type { ICustomCardProps } from '~/types/custom'
+
+defineProps<ICustomCardProps>()
 </script>
 
 <template>

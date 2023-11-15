@@ -1,5 +1,5 @@
-import type { ICustomCardV2Props } from '~/components/custom/card-v2/_type'
 import type { IDetail } from '~/types/project/detail'
+import type { ICustomCardV2Props } from '~/types/custom'
 
 // 获取项目列表
 export const getProjectList = async () => {
