@@ -24,7 +24,7 @@ projectStore.fetchProjectListAction()
     </div>
 
     <!-- 加载盒子 -->
-    <custom-loading :show="projectStore.projectList.length < 1">
+    <custom-loading :show="projectStore.isLoading">
       <div flex flex-wrap gap-3>
         <template v-for="item in projectStore.projectList" :key="item.id">
           <custom-card-v2 v-bind="item" />

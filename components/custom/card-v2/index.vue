@@ -18,13 +18,13 @@ defineProps<ICustomCardV2Props>()
     target="_blank"
   >
     <div flex-1 shrink-0 lt-sm="min-h-2/3" overflow-hidden>
-      <img h-full w-full object-cover :src="img" :alt="title" class="img" transition="transform duration-out-in" />
+      <img h-full w-full :src="img" :alt="title" class="img" transition="transform duration-out-in" />
     </div>
     <div
       border="1 solid dgrey-5 dark:white-6"
       flex="~ col"
       rounded="2 t-none"
-      h="25 lt-sm:20"
+      h="25 lt-xl:22 lt-sm:20"
       lt-sm="max-h-1/3"
       justify-between
       b-t-none
