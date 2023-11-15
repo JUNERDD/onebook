@@ -31,6 +31,7 @@ const useFineMe = [
         <!-- 标题 -->
         <project-title :title="projectDetail.title" :desc="projectDetail.desc" />
 
+        <!-- 中部 -->
         <div flex gap-1 lt-xl:flex-col>
           <!-- 轮播图 -->
           <project-carousel :imgs="projectDetail.imgs" w="2/3 lt-sm:full" />
@@ -63,6 +64,9 @@ const useFineMe = [
             </div>
           </div>
         </div>
+
+        <!-- 底部 -->
+        <project-bottom />
       </div>
     </custom-loading>
   </div>
