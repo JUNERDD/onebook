@@ -16,11 +16,23 @@ export const useProjectStack = () => [
 ]
 
 /* project pinia store */
+const defaultDetail: IDetail = {
+  id: 'string',
+  project_id: 'string',
+  title: 'string',
+  desc: 'string',
+  technology_stack: ['string'],
+  imgs: ['string'],
+  project_link: {
+    type: '0',
+    link: ''
+  }
+}
 export const useProjectStore = defineStore('project', () => {
   // 项目列表
   const projectList = ref<ICustomCardV2Props[]>([])
   // 项目详情
-  const projectDetail = ref<IDetail>()
+  const projectDetail = ref(defaultDetail)
   // 加载状态
   const isLoading = ref(true)
 
