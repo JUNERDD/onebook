@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import type { ITipProps } from '~/components/custom/tip/_type'
-
-defineProps<ITipProps>()
+defineProps<{
+  text: string
+  icon?: string
+  circular?: boolean
+  small?: boolean
+}>()
 </script>
 
 <template>

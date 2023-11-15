@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import type { ICustomCardV2Props } from '~/components/custom/card-v2/_type'
-
-defineProps<ICustomCardV2Props>()
+defineProps<{
+  id: string
+  img: string
+  title: string
+  desc: string
+  tag: string
+}>()
 </script>
 
 <template>
