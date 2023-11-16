@@ -7,7 +7,19 @@ defineProps<{
 </script>
 
 <template>
-  <NuxtLink :to="link" flex-center-i cursor-pointer select-none gap-5 rd-3 p4 auto-bg auto-color-d hover:opacity-90>
+  <NuxtLink
+    :to="link"
+    flex-center-i
+    cursor-pointer
+    select-none
+    gap-5
+    rd-3
+    p4
+    lt-sm="text-xs rd-4 p-7px"
+    auto-bg
+    auto-color-d
+    hover:opacity-90
+  >
     <div v-if="icon" :class="icon"></div>
     <div v-if="text">{{ text }}</div>
   </NuxtLink>

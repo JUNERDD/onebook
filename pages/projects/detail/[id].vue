@@ -17,18 +17,18 @@ projectStore.fetchProjectDetailAction(id as string)
     <custom-loading :show="isLoading">
       <!-- 主要内容 -->
       <template v-if="projectDetail.id !== defaultDetail.id">
-        <div flex="~ col" gap-5xl>
+        <div flex="~ col" gap-5xl lt-sm="text-sm gap-3">
           <!-- 标题 -->
           <project-title :title="projectDetail.title" :desc="projectDetail.desc" />
 
           <!-- 中部 -->
-          <div flex gap-1 lt-xl:flex-col>
+          <div flex flex-wrap gap-1 lt-sm="gap-2">
             <!-- 轮播图 -->
-            <project-carousel :imgs="projectDetail.imgs" w="1/2 lt-sm:full" />
+            <project-carousel :imgs="projectDetail.imgs" w-full />
 
             <!-- 描述 -->
-            <div flex="~ col" flex-1 gap-2>
-              <!-- 名称 -->
+            <div flex="~ col" flex-1 gap-2 w="[calc(50%-3.125rem*1/2)] lt-sm:full">
+              <!-- 角色 -->
               <project-section title="角色" :text="projectDetail.role" />
 
               <!-- 项目地址 -->
@@ -47,16 +47,11 @@ projectStore.fetchProjectDetailAction(id as string)
 
               <!-- 项目周期 -->
               <project-section title="开发周期" :text="projectDetail.time" />
-
-              <!-- 立即体验 -->
-              <div flex flex-1 items-end pb-4>
-                <custom-button icon="i-game-icons-power-lightning" text="立即体验" />
-              </div>
             </div>
-          </div>
 
-          <!-- 底部 -->
-          <project-bottom v-bind="projectDetail.bottom_info" />
+            <!-- 底部 -->
+            <project-bottom v-bind="projectDetail.bottom_info" w="[calc(50%-3.125rem*1/2)] lt-sm:full" />
+          </div>
         </div>
       </template>
       <template v-else>

@@ -5,7 +5,7 @@ const mtClass = computed(() => (mainStore.showMenu ? 'mt-0' : `m-t--131`))
 
 <template>
   <div relative max-w-100vw overflow-hidden>
-    <div mxa max-w-2614px>
+    <div mxa max-w-1279px>
       <!-- 移动端 -->
       <div sm:hidden>
         <app-header-mb />

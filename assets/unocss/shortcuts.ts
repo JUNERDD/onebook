@@ -12,7 +12,8 @@ const shortcuts: UserShortcuts = [
     'p-box': 'flex flex-col gap-1',
     'p-text': 'flex flex-col gap-4 items-start',
     'respon-card':
-      'w-[calc(25%-1.25rem*3/4)] lt-2xl:w-[calc(33.33333%-1.25rem*2/3)] lt-xl:w-[calc(50%-1.25rem*1/2)] lt-sm:w-full'
+      // 'w-[calc(25%-1.25rem*3/4)] lt-2xl:w-[calc(33.33333%-1.25rem*2/3)] lt-xl:w-[calc(50%-1.25rem*1/2)] lt-sm:w-full'
+      'w-[calc(33.33333%-1.25rem*2/3)] lt-xl:w-[calc(50%-1.25rem*1/2)] lt-sm:w-full'
   },
   [
     // 弹性盒子居中快捷方式

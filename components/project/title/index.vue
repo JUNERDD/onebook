@@ -6,9 +6,15 @@ defineProps<{
 </script>
 
 <template>
-  <div mt-5xl flex flex-col gap-4 lt-sm="mt1 flex-center-i">
-    <h1 leading="!tight">{{ title }}</h1>
-    <p>{{ desc }}</p>
+  <div lt-sm="mt-3 flex-col items-start" mt-5xl flex-center-i justify-between gap-4>
+    <!-- 标题 -->
+    <div flex="~ col">
+      <h1 leading="!tight" lt-sm="text-xl">{{ title }}</h1>
+      <p>{{ desc }}</p>
+    </div>
+
+    <!-- 立即体验 -->
+    <custom-button icon="i-game-icons-power-lightning" text="立即体验" />
   </div>
 </template>
 
