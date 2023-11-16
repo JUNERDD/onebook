@@ -15,7 +15,7 @@ withDefaults(
     <custom-title :title="title" />
     <div ml--1 flex flex-wrap gap-4>
       <slot>
-        <div>{{ text }}</div>
+        <span>{{ text }}</span>
       </slot>
     </div>
   </div>

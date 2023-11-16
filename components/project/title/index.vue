@@ -10,7 +10,7 @@ defineProps<{
     <!-- 标题 -->
     <div flex="~ col">
       <h1 leading="!tight" lt-sm="text-xl">{{ title }}</h1>
-      <p>{{ desc }}</p>
+      <span>{{ desc }}</span>
     </div>
 
     <!-- 立即体验 -->
