@@ -18,17 +18,17 @@ const mtClass = computed(() => (mainStore.showMenu ? 'mt-0' : `m-t--131`))
       </div>
 
       <!-- PC端 -->
-      <div lt-sm:hidden>
+      <div relative z-2 lt-sm:hidden>
         <app-header-pc />
         <div full-page-sub>
           <slot />
         </div>
         <app-footer />
       </div>
-
-      <!-- app背景 -->
-      <app-back />
     </div>
+
+    <!-- app背景 -->
+    <app-back />
   </div>
 </template>
 
