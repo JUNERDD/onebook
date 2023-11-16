@@ -20,11 +20,11 @@
 html .app-back {
   background: linear-gradient(
     97.62deg,
-    rgba($BLUE, 0.2) 2.27%,
-    rgba($BLUE, 0.2) 20%,
-    rgba($BLUE, 0.2) 50.88%,
-    rgba($BLUE, 0.2) 80%,
-    rgba($BLUE, 0.2) 98.48%
+    rgba($BLUE, 0.15) 2.27%,
+    rgba($BLUE, 0.15) 20%,
+    rgba($BLUE, 0.15) 50.88%,
+    rgba($BLUE, 0.15) 80%,
+    rgba($BLUE, 0.15) 98.48%
   );
 }
 
