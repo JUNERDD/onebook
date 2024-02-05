@@ -2,9 +2,11 @@
 withDefaults(
   defineProps<{
     show: boolean
+    hideTitle?: boolean
   }>(),
   {
-    show: true
+    show: true,
+    hideTitle: false
   }
 )
 </script>
@@ -12,7 +14,7 @@ withDefaults(
 <template>
   <!--<transition name="el-fade-in-linear" mode="out-in">-->
   <template v-if="show">
-    <custom-loading-ui />
+    <custom-loading-ui :hide-title="hideTitle" />
   </template>
   <template v-else>
     <slot />

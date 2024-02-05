@@ -8,17 +8,18 @@ defineProps<ICustomCardV2Props>()
   <NuxtLink
     aspect="4/3"
     flex="~ col"
+    class="card-v2"
     cursor-pointer
     overflow-hidden
     rounded-2
+    bg-dgrey-6
     respon-card
-    class="card-v2"
     auto-color
     :to="`projects/detail/${id}`"
     target="_blank"
   >
-    <div flex-1 shrink-0 lt-sm="min-h-2/3" overflow-hidden>
-      <img h="120%" w-full :src="img" :alt="title" class="img" transition="transform duration-out-in" />
+    <div lt-sm="min-h-2/3" flex-1 shrink-0 overflow-hidden>
+      <custom-load-img :src="img" :alt="title" />
     </div>
     <div
       border="1 solid dgrey-5 dark:white-6"
@@ -28,7 +29,6 @@ defineProps<ICustomCardV2Props>()
       lt-sm="max-h-1/3"
       justify-between
       b-t-none
-      bg-dgrey-6
       p3
     >
       <h4>{{ title }}</h4>
@@ -42,7 +42,7 @@ defineProps<ICustomCardV2Props>()
 
 <style lang="scss" scoped>
 .card-v2:hover {
-  .img {
+  :deep(.custom-load-img) {
     transform: scale(1.05);
   }
 }

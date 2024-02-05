@@ -1,10 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+withDefaults(
+  defineProps<{
+    hideTitle?: boolean
+  }>(),
+  {
+    hideTitle: false
+  }
+)
+</script>
 
 <template>
   <div w-full flex-center flex-1>
     <div flex="~ col" items-center>
       <div class="LoadingUi" lt-sm="scale-75" dark:invert-100 />
-      <div mt="20 lt-sm:16">加载...</div>
+      <div v-if="!hideTitle" pt="20 lt-sm:16">加载...</div>
     </div>
   </div>
 </template>

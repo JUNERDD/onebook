@@ -12,8 +12,8 @@ const findList = useFineMe()
   <div flex flex-col gap-1 py-30 lt-sm="py-2">
     <div lt-xl="flex-col" mx-a flex gap-1 px-2>
       <!-- 照片 -->
-      <div>
-        <img :src="MeImg" alt="我的照片" w="lt-sm:full sm:md" rd-2 />
+      <div w="lt-sm:full sm:md" bg-dgrey-6>
+        <img :src="MeImg" alt="我的照片" h-full w-full rd-2 />
       </div>
 
       <!-- 描述 -->
