@@ -21,7 +21,7 @@ const isImgLoading = ref(true)
     v-bind="$attrs"
     @load="isImgLoading = false"
   />
-  <custom-loading-ui h="100%" :show="isImgLoading" hide-title />
+  <custom-loading-ui v-show="isImgLoading" h="100%" hide-title />
 </template>
 
 <style lang="scss" scoped></style>
