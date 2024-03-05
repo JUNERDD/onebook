@@ -9,8 +9,14 @@ definePageMeta({
     <!-- 标题 -->
     <blog-title />
 
-    <!-- 博客列表 -->
-    <blog-list />
+    <!-- 内容区域 -->
+    <div flex gap-1>
+      <!-- 筛选列表 -->
+      <blog-filter />
+
+      <!-- 博客列表 -->
+      <blog-list />
+    </div>
   </div>
 </template>
 

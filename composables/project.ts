@@ -1,6 +1,7 @@
 import type { IDetail } from '~/types/project/detail'
 import type { ICustomCardV2Props } from '~/types/custom'
 import { getList, getListByFild } from '~/services'
+import { useLoadingRef } from '~/composables/common'
 
 /* 项目技术栈标签列表 */
 export const useProjectStack = () => [
@@ -15,36 +16,14 @@ export const useProjectStack = () => [
   'TailwindCSS'
 ]
 
-/* project pinia store */
-export const defaultDetail: IDetail = {
-  id: 'string',
-  project_id: 'string',
-  title: 'string',
-  desc: 'string',
-  technology_stack: [],
-  imgs: [],
-  project_link: [],
-  role: 'string',
-  time: 'string',
-  bottom_info: { label: 'string', text: [] }
-}
 export const useProjectStore = defineStore('project', () => {
   // 项目列表
   const projectList = ref<ICustomCardV2Props[]>([])
   // 项目详情
-  const projectDetail = ref(defaultDetail)
-  // 加载状态
-  const isLoading = ref(true)
+  const projectDetail = ref<IDetail>()
 
-  // 包装action组合函数
-  function composeAction<T extends (...args: any[]) => Promise<any>>(action: T) {
-    // 返回一个新函数，接受action的参数
-    return async (...args: Parameters<T>) => {
-      isLoading.value = true
-      await action(...args)
-      isLoading.value = false
-    }
-  }
+  // 获取状态和组合函数
+  const { isLoading, composeAction } = useLoadingRef()
 
   // 请求项目列表
   const fetchProjectListAction = composeAction(async () => {

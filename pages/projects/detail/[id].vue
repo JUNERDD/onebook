@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defaultDetail } from '~/composables/project'
-
 definePageMeta({
   title: '项目'
 })
@@ -16,7 +14,7 @@ projectStore.fetchProjectDetailAction(id as string)
   <div full-page-sub flex="~ col" px-2 pb-1>
     <custom-loading :show="isLoading">
       <!-- 主要内容 -->
-      <template v-if="projectDetail.id !== defaultDetail.id">
+      <template v-if="projectDetail">
         <div flex="~ col" gap-5xl lt-sm="text-sm gap-3">
           <!-- 标题 -->
           <project-detail-title :title="projectDetail.title" :desc="projectDetail.desc" />
