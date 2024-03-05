@@ -1,6 +1,6 @@
-import { getProjectDetail, getProjectList } from '~/services/project'
 import type { IDetail } from '~/types/project/detail'
 import type { ICustomCardV2Props } from '~/types/custom'
+import { getList, getListByFild } from '~/services'
 
 /* 项目技术栈标签列表 */
 export const useProjectStack = () => [
@@ -48,13 +48,13 @@ export const useProjectStore = defineStore('project', () => {
 
   // 请求项目列表
   const fetchProjectListAction = composeAction(async () => {
-    const res = await getProjectList()
+    const res = (await getList<ICustomCardV2Props>('project')).data
     if (res) projectList.value = res
   })
 
   // 请求项目详情
   const fetchProjectDetailAction = composeAction(async (id: string) => {
-    const res = await getProjectDetail(id)
+    const res = (await getListByFild<IDetail>('detail', 'project_id', id)).data
     if (res && res.length > 0) projectDetail.value = res[0]
   })
 
