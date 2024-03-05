@@ -7,7 +7,7 @@ export const useProjectStack = () => [
   'Vue 3',
   'React 18',
   'Nuxt 3',
-  'Next 13',
+  'Next 14',
   'Koa 2',
   'MongoDB',
   'MySQL',
