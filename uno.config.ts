@@ -1,4 +1,4 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno, presetWebFonts } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetUno, transformerDirectives } from 'unocss'
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
 import shortcuts from './assets/unocss/shortcuts'
 import theme from './assets/unocss/theme'
@@ -35,5 +35,7 @@ export default defineConfig({
       // 排除文件
       // exclude: []
     }
-  }
+  },
+  /* 指令转换器 */
+  transformers: [transformerDirectives()]
 })

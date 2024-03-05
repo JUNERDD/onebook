@@ -26,6 +26,7 @@
     "@types/node": "^18.18.7",
     "@unocss/eslint-config": "^0.55.3",
     "@unocss/nuxt": "^0.58.5",
+    "@unocss/transformer-directives": "^0.58.5",
     "@vueuse/core": "^10.3.0",
     "@vueuse/nuxt": "^10.3.0",
     "commitizen": "^4.3.0",

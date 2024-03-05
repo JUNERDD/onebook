@@ -8,7 +8,7 @@ export const useBlogStore = defineStore('blog', () => {
 
   // 请求列表
   const fetchBlogListAction = composeAction((value: string) => {
-    console.log(value)
+    // console.log(value)
   })
 
   return { blogList, isLoading, fetchBlogListAction }

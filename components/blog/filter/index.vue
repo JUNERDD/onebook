@@ -12,12 +12,15 @@ watch(
 </script>
 
 <template>
-  <div w50 shrink-0 lt-sm:w-full>
+  <div w50 flex shrink-0 flex-col gap-2 lt-sm:w-full>
     <!-- 筛选输入框 -->
     <div flex flex-col gap-3>
       <h3 lt-sm:hidden>筛选文章</h3>
       <el-input v-model="searchInput" placeholder="请输入关键字" clearable :prefix-icon="ElIconSearch" />
     </div>
+
+    <!-- 筛选option -->
+    <blog-filter-collapse />
   </div>
 </template>
 
