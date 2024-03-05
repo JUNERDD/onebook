@@ -10,7 +10,7 @@ withDefaults(
 </script>
 
 <template>
-  <div w-full flex-center flex-1>
+  <div w-full flex-center flex-1 py-1>
     <div flex="~ col" items-center>
       <div class="LoadingUi" lt-sm="scale-75" dark:invert-100 />
       <div v-if="!hideTitle" pt="20 lt-sm:16">加载...</div>

@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="BlogList">
+  <div>
     <h2>BlogList</h2>
   </div>
 </template>
