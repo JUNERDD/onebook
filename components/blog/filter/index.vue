@@ -1,22 +1,25 @@
 <script setup lang="ts">
-import { debounce } from 'lodash-es'
-
-const searchInput = ref<string>()
-
-// 输入事件
 const blogStore = useBlogStore()
-watch(
-  searchInput,
-  debounce((val) => blogStore.fetchBlogListAction(val), 1000, { leading: true })
-)
 </script>
 
 <template>
   <div w50 flex shrink-0 flex-col gap-2 lt-sm:w-full>
     <!-- 筛选输入框 -->
     <div flex flex-col gap-3>
-      <h3 lt-sm:hidden>筛选文章</h3>
-      <el-input v-model="searchInput" placeholder="请输入关键字" clearable :prefix-icon="ElIconSearch" />
+      <div flex-center-i justify-between>
+        <h3 lt-sm:hidden>筛选文章</h3>
+
+        <!-- 清除搜索图标 -->
+        <el-icon
+          v-show="blogStore.searchInput?.length || blogStore.searchForm.keys.length"
+          size="1.2rem"
+          cursor-pointer
+          @click="blogStore.clearAction"
+        >
+          <el-icon-circle-close-filled />
+        </el-icon>
+      </div>
+      <el-input v-model="blogStore.searchInput" placeholder="请输入关键字" clearable :prefix-icon="ElIconSearch" />
     </div>
 
     <!-- 筛选option -->

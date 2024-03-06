@@ -17,7 +17,7 @@ const blogStore = useBlogStore()
       <blog-filter />
 
       <!-- 博客列表 -->
-      <custom-loading :show="blogStore.isLoading" items-start sm:pt30>
+      <custom-loading :show="blogStore.isLoading" loading-class="items-start sm:pt30">
         <blog-list />
       </custom-loading>
     </div>

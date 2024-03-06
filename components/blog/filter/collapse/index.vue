@@ -1,43 +1,39 @@
 <script setup lang="ts">
-const checkList = ref(['Value A'])
+import type { CheckboxValueType } from 'element-plus'
 
-const defaultArr = [
-  {
-    title: 'HTML',
-    name: '1',
-    children: [
-      ['Option A', 'Value A'],
-      ['Option B', 'Value B'],
-      ['Option C', 'Value C'],
-      ['Option D', 'Value D']
-    ]
-  },
-  {
-    title: 'JavaScript',
-    name: '2',
-    children: [
-      ['Option E', 'Value E'],
-      ['Option F', 'Value F'],
-      ['Option G', 'Value G']
-    ]
-  }
-]
+const blogCheck = useBlogCheck()
+const blogStore = useBlogStore()
+
+const handleChange = (isCheck: CheckboxValueType, name: string) => {
+  isCheck ? blogStore.checkNum[name]++ : blogStore.checkNum[name]--
+}
 </script>
 
 <template>
   <div class="demo-collapse">
     <el-collapse>
-      <el-collapse-item v-for="item in defaultArr" :key="item.name" :name="item.name">
+      <el-collapse-item v-for="item in blogCheck" :key="item.name" :name="item.name">
         <template #title>
           <div w-full flex-center-i justify-between>
             <span>{{ item.title }}</span>
-            <el-badge :value="1" :show-zero="false" right-3 type="primary">
-              <!--占位-->
-            </el-badge>
+            <span
+              v-show="blogStore.checkNum[item.name]"
+              mr5
+              h5
+              w5
+              flex-center
+              scale-80
+              rd-1
+              text-sm
+              auto-bg
+              auto-color-d
+            >
+              {{ blogStore.checkNum[item.name] }}
+            </span>
           </div>
         </template>
 
-        <el-checkbox-group v-model="checkList">
+        <el-checkbox-group v-model="blogStore.searchForm.keys">
           <el-checkbox
             v-for="childItem in item.children"
             :key="childItem"
@@ -50,6 +46,7 @@ const defaultArr = [
             px4
             sm="w-full"
             lt-sm="!mr4 w-[calc(33%-0.625rem)] min-w26"
+            @change="(val) => handleChange(val, item.name)"
           />
         </el-checkbox-group>
       </el-collapse-item>
