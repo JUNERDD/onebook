@@ -27,7 +27,16 @@ const defaultArr = [
 <template>
   <div class="demo-collapse">
     <el-collapse>
-      <el-collapse-item v-for="item in defaultArr" :key="item.name" :title="item.title" :name="item.name">
+      <el-collapse-item v-for="item in defaultArr" :key="item.name" :name="item.name">
+        <template #title>
+          <div w-full flex-center-i justify-between>
+            <span>{{ item.title }}</span>
+            <el-badge :value="1" :show-zero="false" right-3 type="primary">
+              <!--占位-->
+            </el-badge>
+          </div>
+        </template>
+
         <el-checkbox-group v-model="checkList">
           <el-checkbox
             v-for="childItem in item.children"
@@ -40,6 +49,7 @@ const defaultArr = [
             rd-4
             px4
             sm="w-full"
+            lt-sm="!mr4 w-[calc(33%-0.625rem)] min-w26"
           />
         </el-checkbox-group>
       </el-collapse-item>
@@ -49,6 +59,18 @@ const defaultArr = [
 
 <style lang="scss" scoped>
 :deep(.el-checkbox__inner) {
-  @apply rd-4;
+  @apply rd-4 border-dgrey dark:border-dgrey-4;
+}
+
+@media screen and (max-width: 401px) {
+  :deep(.el-checkbox) {
+    width: calc(50% - 0.625rem);
+  }
+}
+
+@media screen and (max-width: 287px) {
+  :deep(.el-checkbox) {
+    width: 100%;
+  }
 }
 </style>
