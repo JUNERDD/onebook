@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { SpeedInsights } from '@vercel/speed-insights/vue'
+
 const mainStore = useMainStore()
 const mtClass = computed(() => (mainStore.showMenu ? 'mt-0' : `m-t--131`))
 </script>
@@ -29,6 +31,9 @@ const mtClass = computed(() => (mainStore.showMenu ? 'mt-0' : `m-t--131`))
 
     <!-- app背景 -->
     <app-back />
+
+    <!-- 统计组件 -->
+    <SpeedInsights />
   </div>
 </template>
 
