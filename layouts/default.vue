@@ -2,7 +2,7 @@
 import { SpeedInsights } from '@vercel/speed-insights/vue'
 
 const mainStore = useMainStore()
-const mtClass = computed(() => (mainStore.showMenu ? 'mt-0' : `m-t--156`))
+const mtClass = computed(() => (mainStore.showMenu ? 'mt-0' : `m-t--131`))
 </script>
 
 <template>

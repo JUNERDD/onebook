@@ -14,11 +14,6 @@ export const useMenuList = () => [
     to: '/introduction',
     label: '介绍',
     desc: 'Introduction'
-  },
-  {
-    to: '/ai',
-    label: '聊天',
-    desc: 'AI聊天界面'
   }
 ]
 
