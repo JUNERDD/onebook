@@ -14,6 +14,11 @@ export const useMenuList = () => [
     to: '/introduction',
     label: '介绍',
     desc: 'Introduction'
+  },
+  {
+    to: '/ai',
+    label: '聊天',
+    desc: 'AI聊天界面'
   }
 ]
 
@@ -21,7 +26,7 @@ export const useMenuList = () => [
 export const useMenuInfo = () => [
   {
     icon: 'i-game-icons-phone',
-    label: '不必了，你可以通过邮箱联系我'
+    label: '你可以通过邮箱联系我'
   },
   {
     icon: 'i-game-icons-envelope',
