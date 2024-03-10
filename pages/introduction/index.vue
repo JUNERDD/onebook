@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import MeImg from '@/assets/img/main/me.jpg'
-
 definePageMeta({
   title: '介绍'
 })
@@ -13,7 +11,7 @@ const findList = useFineMe()
     <div lt-xl="flex-col" mx-a flex gap-1 px-2>
       <!-- 照片 -->
       <div w="lt-sm:full sm:md" bg-dgrey-6>
-        <img :src="MeImg" alt="我的照片" h-full w-full rd-2 />
+        <img src="/img/introduction/me.jpg" alt="我的照片" h-full w-full rd-2 />
       </div>
 
       <!-- 描述 -->
