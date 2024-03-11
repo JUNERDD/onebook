@@ -1,12 +1,15 @@
 import { debounce } from 'lodash-es'
 import { useLoadingRef } from '~/composables/common'
 import type { IBlogCheck, IcheckNum, ISearchForm } from '~/types/blog'
+import { getList } from '~/services'
+import type { ICustomCardV3Props } from '~/types/custom'
 
-// 博客store
 export const defaultSearchForm: ISearchForm = {
   input: '',
   keys: []
 }
+
+// 博客store
 export const useBlogStore = defineStore('blog', () => {
   // 关键字搜索框
   const searchInput = ref<string>()
@@ -19,13 +22,14 @@ export const useBlogStore = defineStore('blog', () => {
   useBlogCheck().map((item) => (checkNum[item.name] = 0))
 
   // 博客列表
-  const blogList = ref([])
+  const blogList = ref<ICustomCardV3Props[]>([])
 
   const { isLoading, composeAction } = useLoadingRef()
 
   // 请求列表
-  const fetchBlogListAction = composeAction((form: ISearchForm) => {
-    // console.log(form)
+  const fetchBlogListAction = composeAction(async (form = searchForm.value) => {
+    const res = (await getList<ICustomCardV3Props>('blog')).data
+    if (res) blogList.value = res
   })
 
   // 清除搜索

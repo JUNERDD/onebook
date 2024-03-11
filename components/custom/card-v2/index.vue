@@ -15,7 +15,7 @@ defineProps<ICustomCardV2Props>()
     bg-dgrey-6
     respon-card
     auto-color
-    :to="`projects/detail/${id}`"
+    :to="`projects/${id}`"
     target="_blank"
   >
     <div lt-sm="min-h-2/3" flex-1 shrink-0 overflow-hidden>

@@ -13,6 +13,13 @@ export interface ICustomCardV2Props {
   tag: string
 }
 
+export interface ICustomCardV3Props {
+  id: string
+  title: string
+  desc: string
+  time: string | number
+}
+
 export interface ICustomLink {
   text: string
   link?: string

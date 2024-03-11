@@ -4,6 +4,7 @@ definePageMeta({
 })
 
 const blogStore = useBlogStore()
+blogStore.fetchBlogListAction()
 </script>
 
 <template>
@@ -18,7 +19,7 @@ const blogStore = useBlogStore()
 
       <!-- 博客列表 -->
       <custom-loading :show="blogStore.isLoading" loading-class="items-start sm:pt30">
-        <blog-list />
+        <blog-list :blog-list="blogStore.blogList" />
       </custom-loading>
     </div>
   </div>
