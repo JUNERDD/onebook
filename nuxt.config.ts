@@ -30,7 +30,8 @@ export default defineNuxtConfig({
     '@pinia-plugin-persistedstate/nuxt',
     '@nuxtjs/google-fonts',
     '@nuxtjs/supabase',
-    '@element-plus/nuxt'
+    '@element-plus/nuxt',
+    '@nuxtjs/mdc'
   ],
   // element plus
   elementPlus: {
@@ -47,6 +48,14 @@ export default defineNuxtConfig({
     redirect: false,
     url: process.env.SUPABASE_URL,
     key: process.env.SUPABASE_ANON_KEY
+  },
+  // mdc
+  mdc: {
+    components: {
+      map: {
+        strong: 'MdcStrong'
+      }
+    }
   },
   // 定义app配置
   app: {
